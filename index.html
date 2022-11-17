@@ -8,7 +8,7 @@
        display: block;
        margin-left: auto;
        margin-right: auto;
-       width: 50%;
+       width: 40%;
   }
   
  </style>
@@ -20,20 +20,16 @@
  <script>
   let deg = 0;
   let amogus = document.getElementById('amogus');
-  function update_deg(){
+  function update(){
     if (deg == 360) {
       deg = -1;
     }
     deg += 1;
-    setTimeout(update, 1000);
-  }
-  function update_img(){
     amogus.style.transform = `rotate(${deg}deg)`;
-    setTimeout(update_img, 1);
+    setTimeout(update, 3);
   }
   
-  update_deg();
-  update_img();
+  update();
   
   
 </script>
