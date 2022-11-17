@@ -8,20 +8,24 @@
        display: block;
        margin-left: auto;
        margin-right: auto;
-       width: 40%;
+       width: 25%;
   }
   
  </style>
   
 <body>
   <img src="https://play-lh.googleusercontent.com/8ddL1kuoNUB5vUvgDVjYY3_6HwQcrg1K2fd_R8soD-e2QYj8fT9cfhfh3G0hnSruLKec" id="amogus">
+  <h id="counter">0</h>
 </body>
  
  <script>
   let deg = 0;
+  let spins = 0;
   let amogus = document.getElementById('amogus');
   function update(){
     if (deg == 360) {
+      spins += 1;
+      document.getElementById("counter").innerText = spins.toString();
       deg = -1;
     }
     deg += 1;
