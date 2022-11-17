@@ -3,12 +3,13 @@
  
 <script>
   let deg = 0;
+  let amogus = document.getElementById('amogus');
   function update(){
     if (deg == 360) {
       deg = -1;
     }
     deg += 1;
-    document.getElementById('amogus').style.transform = `rotate(${deg})`;
+    amogus.style.transform = `rotate(${deg})`;
     setTimeout(update, 1000);
   }
 </script>
