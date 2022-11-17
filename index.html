@@ -39,12 +39,12 @@
   let spins = 0;
   let amogus = document.getElementById('amogus');
   function update(){
-    if (deg == 360) {
+    if (deg >= 360) {
       spins += 1;
       document.getElementById("counter").innerText = spins.toString();
-      deg = -2;
+      deg = -4;
     }
-    deg += 2;
+    deg += 4;
     amogus.style.transform = `rotate(${deg}deg)`;
     setTimeout(update, 0.5);
   }
