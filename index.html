@@ -16,7 +16,7 @@
   #counter{
 	width:50px;
 	height:50px;
-	top:50%;
+	top:80%;
 	left:50%;
 	margin:-25px 0 0 -25px;
 	position:absolute;
@@ -42,9 +42,9 @@
     if (deg == 360) {
       spins += 1;
       document.getElementById("counter").innerText = spins.toString();
-      deg = -1;
+      deg = -2;
     }
-    deg += 1;
+    deg += 2;
     amogus.style.transform = `rotate(${deg}deg)`;
     setTimeout(update, 0.5);
   }
